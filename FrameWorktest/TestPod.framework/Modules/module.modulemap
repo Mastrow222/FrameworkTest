@@ -1,0 +1,11 @@
+framework module TestPod {
+  umbrella header "TestPod.h"
+
+  export *
+  module * { export * }
+}
+
+module TestPod.Swift {
+    header "TestPod-Swift.h"
+    requires objc
+}
